@@ -4,12 +4,32 @@ public class Controller
 {
 
 	public void start()
+	{	
+		loopTest();
+	}
+	
+	private void loopTest()
 	{
-		System.out.println("Baby cat bear iguana");
-		System.out.println("Has four legs and sits");
-		System.out.println("And then runs away");
-		System.out.print("little booties on his feet");
-		System.out.print("He trips and bites his lip");
-		System.out.println("Type you filthy swine");
+		
+		//simon says do something and only stop when he says so
+		
+		//define the variable
+		boolean isFinished = false;
+		
+		int count = 0;
+		
+		//test the variable
+		while (!isFinished)
+		{
+			//do things and dont stop here
+			System.out.println("Beans and stuff" + count);
+			count ++;
+					
+			if (count > 130)
+			{
+				//make a stopping point
+				isFinished = true;
+			}
+		}
 	}
 }
