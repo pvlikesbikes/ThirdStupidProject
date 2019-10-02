@@ -31,5 +31,26 @@ public class Controller
 				isFinished = true;
 			}
 		}
+		System.out.println("Beans and things at: " + count);
+		
+		while (count > 0)
+		{
+			System.out.println(count);
+			count--;
+			
+		}
+		
+		int special = 1;
+		do
+		{
+			System.out.println(special);
+			special--;
+		}while (special > 0);
+		
+		for (int spot = 0; spot < 100; spot++)
+		{
+			System.out.println("Beans are: " + spot);
+		}
+		//spot is not visible anymore
 	}
 }
