@@ -1,8 +1,18 @@
 package third.controller;
 
+//need to import popup bc its in a different package
+import third.view.Popup;
+
 public class Controller
 {
 
+	private Popup view;
+	
+	public Controller()
+	{
+		view = new Popup();
+	}
+	
 	public void start()
 	{	
 		loopTest();
@@ -15,7 +25,7 @@ public class Controller
 		
 		//define the variable
 		boolean isFinished = false;
-		
+		view.displayMessage("Beans boy");
 		int count = 0;
 		
 		//test the variable
@@ -23,6 +33,8 @@ public class Controller
 		{
 			//do things and dont stop here
 			System.out.println("Beans and stuff" + count);
+			
+			view.displayMessage(count + "");
 			count ++;
 					
 			if (count > 130)
