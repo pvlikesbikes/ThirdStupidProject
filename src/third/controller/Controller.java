@@ -34,7 +34,9 @@ public class Controller
 			//do things and dont stop here
 			System.out.println("Beans and stuff" + count);
 			
-			view.displayMessage(count + "");
+			//view.displayMessage(count + "");
+			String response = view.askQuestion("Hi, beans?");
+			view.displayMessage(response + "?");
 			count ++;
 					
 			if (count > 130)
