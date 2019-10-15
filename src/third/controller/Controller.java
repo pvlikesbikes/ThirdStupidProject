@@ -38,6 +38,14 @@ public class Controller
 		{
 			view.displayMessage("Index: " + index + " is storing" + userInput.get(index));	
 		}
+		view.displayMessage("Lets destroy the list");
+		
+		for (int index = userInput.size() - 1; index >= 0; index --)
+		{
+			String contents = userInput.remove(index);
+			view.displayMessage("You just removed: " + contents);
+		}
+		view.displayMessage("The list is now this big:" + userInput.size());
 	}
 
 	private void loopTest()
